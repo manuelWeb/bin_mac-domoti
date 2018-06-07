@@ -1,0 +1,5 @@
+#!/bin/zsh
+# open multiple arg in firefox
+for i in "$@"; do
+  open -a /Applications/Firefox.app "$i"
+done

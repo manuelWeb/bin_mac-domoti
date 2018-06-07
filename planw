@@ -1,0 +1,13 @@
+#!/bin/zsh
+# ouverture planning-Manuel-2016
+var=$(pwd)
+if [[ $1 == '17' ]]; then
+  echo "ouverture du planning 20${1}"
+  # cd K:/WEB/ && cygstart Plan_WEB_2017.xls
+  cd /Volumes/service\ marketing\$/WEB/ && open Plan_WEB_2017.xls 
+else
+  echo "ouverture du planning 2018"
+  # cd K:/WEB/ && cygstart Plan_WEB_2018.xls
+  cd /Volumes/service\ marketing\$/WEB/ && open Plan_WEB_2018.xls 
+fi
+cd $var
