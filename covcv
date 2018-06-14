@@ -1,0 +1,21 @@
+#!/bin/zsh
+
+echo "mois:"
+mois=''
+read mois
+echo "$mois/année:"
+annee=''
+read annee
+echo "$mois/$annee"
+
+mkdir "/Users/mdevries/Documents/CV/cover/$mois$annee"
+
+cd "/Users/mdevries/Documents/CV/cover/$mois$annee"
+cd ../
+
+open "/Users/mdevries/Documents/CV/cover/$mois$annee"
+
+# + ouvrir R:/pdf
+# open Volumes/PDFs\ Web/Confort\ \&\ Vie\ Web/CACV
+open /Volumes/PDFs\ Web/Confort\ \&\ Vie\ Web/CACV
+echo 'toCopyCV_cover: cp Volumes/PDFs\ Web/Vivaform\ Web/CAVF/CAVF_0518*'
