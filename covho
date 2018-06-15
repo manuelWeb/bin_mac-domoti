@@ -1,0 +1,28 @@
+#!/bin/zsh
+
+echo "mois:"
+mois=''
+read mois
+echo "$mois/année:"
+annee=''
+read annee
+echo "$mois/$annee"
+
+# mkdir "C:\Users\mdevries\Pictures\tl\cover\\$mois$annee"
+mkdir "/Users/mdevries/Documents/HO/cover/$mois$annee"
+# cd "C:\Users\mdevries\Pictures\tl\cover\\$mois$annee"
+cd "/Users/mdevries/Documents/HO/cover/$mois$annee"
+# touch desktop.ini
+# touch .DS_Store
+# echo ".DS_Store: " >> .DS_Store
+#
+# -E disable backslash interpretation
+  # echo -E "IconResource=C:\Users\mdevries\Pictures\domoti\favicon\perso\months\\$mois.y$annee.ico,0" >> desktop.ini
+
+cd ../
+open "/Users/mdevries/Documents/HO/cover/$mois$annee"
+
+# + ouvrir R:/pdf
+# open R:/
+open /Volumes/PDFs\ Web/Idées\ Homme\ Web/CAID 
+echo 'cp *01_Web* /cygdrive/c/Users/mdevries/Pictures/ho/cover/0X17'
