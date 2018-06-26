@@ -28,4 +28,5 @@ open "/Users/mdevries/Documents/TL/cover/$mois$annee"
 # open R:/
 # cygstart R:/Temps\ L\ Web/CATL && cygstart R:/Ideal\ Pratique\ Web/CAIP
 open /Volumes/PDFs\ Web/Temps\ L\ Web/CATL && open /Volumes/PDFs\ Web/Ideal\ Pratique\ Web/CAIP
-echo 'cp *01_Web* /cygdrive/c/Users/mdevries/Pictures/tl/cover/0X17'
+echo 'cp /Volumes/PDFs\ Web/Ideal\ Pratique\ Web/CAIP/CAIP_0718-108/*(_1_Web.pdf|001_Web.pdf) /Users/mdevries/Documents/TL/cover/0718'
+echo 'cp /Volumes/PDFs\ Web/Temps\ L\ Web/CATL/CATL_0718-120/CATL_0718-120_FR_001_Web.pdf /Users/mdevries/Documents/TL/cover/0718'
