@@ -1,0 +1,8 @@
+#!/bin/zsh
+# pwd
+# pwd [options]
+var=$(pwd)
+echo "return to pwd $var"
+# cd I:/Vérifications\ campagnes/ && cygstart CODE-CAMPAGNE-TTES-ENSEIGNES.xlsx
+cd /Volumes/service\ internet\$/Vérifications\ campagnes && open CODE-CAMPAGNE-TTES-ENSEIGNES.xlsx
+cd $var
