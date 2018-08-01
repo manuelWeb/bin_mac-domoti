@@ -11,7 +11,7 @@ if [ -d "$output" ];then
   echo -e "Oups, $output file EXIST!\n...you almost DESTROYED it."
   exit 0
 else
-  echo "file:$output does't exist then duplicate $input in:$output!"
+  echo "file:$output doesn't exist then duplicate $input in:$output!"
   cp -r $input $output && cd $output
   echo "ready to work in $output"
 fi
