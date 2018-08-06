@@ -1,4 +1,12 @@
 #!/bin/zsh
-# echo -E ${1/I:/\/Volumes\/service\ internet\$}  | sed -e 's/\\/\//g'
-mavar=$(echo -E ${1/I:/\/Volumes\/service\ internet\$}  | sed -e 's/\\/\//g')
+
+# mavar=$(echo -eE ${1/I:/\/Volumes\/service\ internet\$}  | sed -e 's/\\/\//g')
+mavar=$(echo -E ${1/I:/\/Volumes\/service\ internet\$}  | sed -e 's|\\|\/|g')
 open $mavar
+
+# print_something () {
+#   echo -E open $1
+#   # printf '%s\n' "$1"
+# }
+# print_something $1
+#
