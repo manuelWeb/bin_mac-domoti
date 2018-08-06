@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # mavar=$(echo -eE ${1/I:/\/Volumes\/service\ internet\$}  | sed -e 's/\\/\//g')
-mavar=$(echo -E ${1/R:/\/Volumes\/service\ internet\$}  | sed -e 's|\\|\/|g')
+mavar=$(echo -E ${1/R:/\/Volumes\/PDFs\ Web}  | sed -e 's|\\|\/|g')
 open $mavar
 
 # print_something () {
