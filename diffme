@@ -1,0 +1,21 @@
+#!/bin/zsh
+
+diffme(){
+  echo -n "REP1 : "
+  read -r REP1
+  echo -n "REP2 : "
+  read -r REP2
+  echo -n "1: " && ls $REP1
+  echo -n "2: " && ls $REP2
+  # echo -E $REP1 $REP2 # -E noescape backslash
+  if [ $(diff -r $REP1 $REP2 | grep -c .) -gt 0 ]; then
+    output="$(diff -r $REP1 $REP2)"
+    echo -E $output > rapport.md
+    echo "!IMPORTANT > Les répertoires sont différents lire le rapport rapport.md"
+  else
+    echo "Les répertoires sont identiques"
+  fi
+  # cygstart rapport.md
+  if [ -f rapport.md ] ; then echo "open rapport.md : $pwd"; else echo "coool!" ; fi
+}
+
