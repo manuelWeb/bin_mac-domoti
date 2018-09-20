@@ -18,4 +18,4 @@ open "/Users/mdevries/Documents/CV/cover/$mois$annee"
 # + ouvrir R:/pdf
 # open Volumes/PDFs\ Web/Confort\ \&\ Vie\ Web/CACV
 open /Volumes/PDFs\ Web/Confort\ \&\ Vie\ Web/CACV
-echo 'toCopyCV_cover: cp Volumes/PDFs\ Web/Vivaform\ Web/CAVF/CAVF_0518*'
+echo 'cp /Volumes/PDFs\ Web/Vivaform\ Web/CAVF/CAVF_0918-C255/CAVF_0918-C255_*_01_* /Users/mdevries/Documents/CV/cover/0918'
