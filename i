@@ -1,6 +1,6 @@
 #!/bin/zsh
-
-cd /Users/mdevries/Documents/$1
+usr=$USER
+cd /Users/$usr/Documents/$1
 count=1
 for i in *; do
  # if test -d $i; then echo 'dossier= '$i;else echo 'files= '$i;fi

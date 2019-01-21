@@ -1,5 +1,5 @@
 var=$(pwd)
-echo "retrun to pwd: $var"
+echo "return to pwd: $var"
 # cd K:/WEB/Manuel/ && vim -p dl2018.md &
-cd /Volumes/service\ marketing\$/WEB/Manuel && vim dl2018.md
+cd /Volumes/service\ marketing\$/WEB/Manuel && code dl2018.md
 cd $var

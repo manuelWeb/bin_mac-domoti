@@ -1,5 +1,5 @@
 #!/bin/zsh
-
+usr=$USER
 echo "mois:"
 mois=''
 read mois
@@ -8,14 +8,14 @@ annee=''
 read annee
 echo "$mois/$annee"
 
-mkdir "/Users/mdevries/Documents/CV/cover/$mois$annee"
+mkdir "/Users/$usr/Documents/CV/cover/$mois$annee"
 
-cd "/Users/mdevries/Documents/CV/cover/$mois$annee"
+cd "/Users/$usr/Documents/CV/cover/$mois$annee"
 cd ../
 
-open "/Users/mdevries/Documents/CV/cover/$mois$annee"
+open "/Users/$usr/Documents/CV/cover/$mois$annee"
 
 # + ouvrir R:/pdf
 # open Volumes/PDFs\ Web/Confort\ \&\ Vie\ Web/CACV
 open /Volumes/PDFs\ Web/Confort\ \&\ Vie\ Web/CACV
-echo 'cp /Volumes/PDFs\ Web/Vivaform\ Web/CAVF/CAVF_0918-C255/CAVF_0918-C255_*_01_* /Users/mdevries/Documents/CV/cover/0918'
+echo 'cp /Volumes/PDFs\ Web/Vivaform\ Web/CAVF/CAVF_0918-C255/CAVF_0918-C255_*_01_* /Users/$usr/Documents/CV/cover/0918'

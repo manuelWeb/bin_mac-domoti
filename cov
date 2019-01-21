@@ -1,4 +1,5 @@
 #!/bin/zsh
+usr=$USER
 echo "brand:"
 brand=''
 read brand
@@ -6,8 +7,8 @@ echo "date(mmyy):"
 date_mmy=''
 read date_mmy
 cp=1
-# result=$(find /cygdrive/c/Users/mdevries/Pictures/$brand/cover/$date_mmy/ -type f ! -name '*.ini' 2> /dev/null)
-result=$(find /Users/mdevries/Documents/$brand/cover/$date_mmy/ -type f ! -name '.DS_Store')
+# result=$(find /cygdrive/c/Users/$usr/Pictures/$brand/cover/$date_mmy/ -type f ! -name '*.ini' 2> /dev/null)
+result=$(find /Users/$usr/Documents/$brand/cover/$date_mmy/ -type f ! -name '.DS_Store')
 
 if [ $result ];then
   while read -r line;do
@@ -22,8 +23,8 @@ echo "ouvrir le dossier ? Y | n"
 resOpen=''
 read resOpen
 if [[ $resOpen = 'y' || $resOpen = 'Y' || $resOpen = 'Yes' || $resOpen = 'yes' || $resOpen = ''  ]];then
-  # cygstart "/cygdrive/c/Users/mdevries/Pictures/$brand/cover/$date_mmy/"
-  open "/Users/mdevries/Documents/$brand/cover/$date_mmy/"
+  # cygstart "/cygdrive/c/Users/$usr/Pictures/$brand/cover/$date_mmy/"
+  open "/Users/$usr/Documents/$brand/cover/$date_mmy/"
 else
   echo "your answer is \"$resOpen\"... ok guy, do what you have to do!"
 fi

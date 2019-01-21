@@ -1,5 +1,5 @@
 #!/bin/zsh
-
+usr=$USER
 echo "mois:"
 mois=''
 read mois
@@ -8,25 +8,25 @@ annee=''
 read annee
 echo "$mois/$annee"
 
-# mkdir "C:\Users\mdevries\Pictures\tl\cover\\$mois$annee"
-mkdir "/Users/mdevries/Documents/TL/cover/$mois$annee"
-# cd "C:\Users\mdevries\Pictures\tl\cover\\$mois$annee"
-cd "/Users/mdevries/Documents/TL/cover/$mois$annee"
+# mkdir "C:\Users\$usr\Pictures\tl\cover\\$mois$annee"
+mkdir "/Users/$usr/Documents/TL/cover/$mois$annee"
+# cd "C:\Users\$usr\Pictures\tl\cover\\$mois$annee"
+cd "/Users/$usr/Documents/TL/cover/$mois$annee"
 # touch desktop.ini
 touch .DS_Store
 echo ".DS_Store: " >> .DS_Store
 #
 # -E disable backslash interpretation
-  # echo -E "IconResource=C:\Users\mdevries\Pictures\domoti\favicon\perso\months\\$mois.y$annee.ico,0" >> desktop.ini
+  # echo -E "IconResource=C:\Users\$usr\Pictures\domoti\favicon\perso\months\\$mois.y$annee.ico,0" >> desktop.ini
   # attrib +s +h desktop.ini
 
 cd ../
   # attrib +r $mois$annee
-open "/Users/mdevries/Documents/TL/cover/$mois$annee"
+open "/Users/$usr/Documents/TL/cover/$mois$annee"
 
 # + ouvrir R:/pdf
 # open R:/
 # cygstart R:/Temps\ L\ Web/CATL && cygstart R:/Ideal\ Pratique\ Web/CAIP
 open /Volumes/PDFs\ Web/Temps\ L\ Web/CATL && open /Volumes/PDFs\ Web/Ideal\ Pratique\ Web/CAIP
-echo 'cp /Volumes/PDFs\ Web/Ideal\ Pratique\ Web/CAIP/CAIP_0718-108/*(_1_Web.pdf|001_Web.pdf) /Users/mdevries/Documents/TL/cover/0718'
-echo 'cp /Volumes/PDFs\ Web/Temps\ L\ Web/CATL/CATL_0718-120/CATL_0718-120_FR_001_Web.pdf /Users/mdevries/Documents/TL/cover/0718'
+echo 'cp /Volumes/PDFs\ Web/Ideal\ Pratique\ Web/CAIP/CAIP_0718-108/*(_1_Web.pdf|001_Web.pdf) /Users/$usr/Documents/TL/cover/0718'
+echo 'cp /Volumes/PDFs\ Web/Temps\ L\ Web/CATL/CATL_0718-120/CATL_0718-120_FR_001_Web.pdf /Users/$usr/Documents/TL/cover/0718'

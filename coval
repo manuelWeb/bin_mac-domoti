@@ -1,5 +1,5 @@
 #!/bin/zsh
-
+usr=$USER
 echo "mois:"
 mois=''
 read mois
@@ -8,21 +8,21 @@ annee=''
 read annee
 echo "$mois/$annee"
 
-# mkdir "C:\Users\mdevries\Pictures\tl\cover\\$mois$annee"
-mkdir "/Users/mdevries/Documents/AL/cover/$mois$annee"
-# cd "C:\Users\mdevries\Pictures\tl\cover\\$mois$annee"
-cd "/Users/mdevries/Documents/AL/cover/$mois$annee"
+# mkdir "C:\Users\$usr\Pictures\tl\cover\\$mois$annee"
+mkdir "/Users/$usr/Documents/AL/cover/$mois$annee"
+# cd "C:\Users\$usr\Pictures\tl\cover\\$mois$annee"
+cd "/Users/$usr/Documents/AL/cover/$mois$annee"
 # touch desktop.ini
 # touch .DS_Store
 # echo ".DS_Store: " >> .DS_Store
 #
 # -E disable backslash interpretation
-  # echo -E "IconResource=C:\Users\mdevries\Pictures\domoti\favicon\perso\months\\$mois.y$annee.ico,0" >> desktop.ini
+  # echo -E "IconResource=C:\Users\$usr\Pictures\domoti\favicon\perso\months\\$mois.y$annee.ico,0" >> desktop.ini
 
 cd ../
-open "/Users/mdevries/Documents/AL/cover/$mois$annee"
+open "/Users/$usr/Documents/AL/cover/$mois$annee"
 
 # + ouvrir R:/pdf
 # open R:/
 open /Volumes/PDFs\ Web/Atelier\ de\ Lucie\ Web/CAAL
-echo 'cp *01_Web* /cygdrive/c/Users/mdevries/Pictures/mm/cover/0X17'
+echo 'cp *01_Web* /cygdrive/c/Users/$usr/Pictures/mm/cover/0X17'
