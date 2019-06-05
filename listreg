@@ -1,0 +1,14 @@
+#!/bin/zsh
+# usr=$USER
+echo "path:"
+path=''
+read path
+echo "motif:"
+motif=''
+read motif
+
+# to use ls bash cmd use → /bin/ls
+# echo $path && echo $motif
+
+/bin/ls $path | /usr/bin/egrep $motif
+
