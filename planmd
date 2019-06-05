@@ -1,5 +1,15 @@
 var=$(pwd)
 echo "return to pwd: $var"
+
+# PC (windows 7)
 # cd K:/WEB/Manuel/ && vim -p dl2018.md &
-cd /Volumes/service\ marketing\$/WEB/Manuel && code dl2018.md
+
+# Choose Your Weapon
+# vscode
+# cd /Volumes/service\ marketing\$/WEB/Manuel && code dl2018.md
+
+# vim
+cd /Volumes/service\ marketing\$/WEB/Manuel && vim dl2018.md
+
+# return to your current directory
 cd $var

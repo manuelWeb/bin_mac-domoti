@@ -18,4 +18,5 @@ txt[7]="Bowman  : \"C'est creux… jusqu'à l'infini…et… Oh ! mon Dieu ! C'e
 randNum=$((RANDOM%=${#txt[@]}))
 
 
-echo $rC ${txt[$randNum]}
+# echo $rC ${txt[$randNum]}
+echo ${txt[$randNum]}$rC
