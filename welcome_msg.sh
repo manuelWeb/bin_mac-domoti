@@ -11,6 +11,7 @@ txt[4]="HAL  : \"Look Mr ${usr}, I can see you're really upset about this. \n  I
 txt[5]="HAL  : \"Un homme, dans certaines circonstances, peut abandonner toute humanité lorsqu’il est en proie à la panique.\""
 txt[6]="Bowman  : \"La distance rend toute chose infiniment plus précieuse.\""
 txt[7]="Bowman  : \"C'est creux… jusqu'à l'infini…et… Oh ! mon Dieu ! C'est plein d'étoiles !\""
+txt[8]="Et les dernières lueurs de bonheur s'éteignent alors que nous entrons dans l'enfer de la cascade."
 
 # ary length
 # echo "${#txt[@]}"
